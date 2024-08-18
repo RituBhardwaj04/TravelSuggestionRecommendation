@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?cs=srgb&dl=pexels-galerieb-1209978.jpg&fm=jpg'); /* Apply city-view image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center;
+    background-attachment: fixed; /* Ensures that the image stays fixed during scrolling */
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c2d32;
+    padding: 15px 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    color: white;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.search-container button {
+    background-color: #218b8f;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #1b7072;
+}
+
+.search {
+    color: #218b8f;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.clear-button {
+    background-color: #bf3737;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.search-container button:nth-child(3):hover {
+    background-color: #a33131;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #1c2d32;
+    font-size: 48px;
+}
+
+.social-icons a:hover {
+    background-color: #218b8f;
+}
+/* Styling the search results */
+#results-container {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.result-card {
+    background-color: white;
+    border: 1px solid #1c2d32;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.result-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.result-card h3 {
+    margin: 10px 0;
+}
+
+.result-card p {
+    font-size: 14px;
+}
+
+.btn-visit {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #218b8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;  /* Add some padding to create space from the left edge */
+    text-align: left;     /* Align text to the left */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;  /* Limit the width of the text block */
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 100%;  /* Full width text within the content block */
+}
+
+.btn-primary {
+    background-color: #218b8f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1b7072;
+}
+
+/* About Us Section */
+.about-us-section {
+    padding: 100px 50px;
+    text-align: center;
+    color: white;
+}
+
+.about-us-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.about-us-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 15px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    padding: 100px 50px;
+    text-align: center;
+    color: white
+}
+
+.contact-us-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-us-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-us-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-us-section input,
+.contact-us-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #1c2d32;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-us-section input:focus,
+.contact-us-section textarea:focus {
+    border-color: #218b8f;
+}
+
+.contact-us-section button {
+    background-color: #218b8f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-section button:hover {
+    background-color: #196d6f;
+}
